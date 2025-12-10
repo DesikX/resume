@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Денис</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">&lt;Denis <span class="accent">Dev</span>/&gt;</a>
+            
+            <div class="header__controls">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#about" class="nav__link">Про мене</a></li>
+                        <li><a href="#skills" class="nav__link">Навички</a></li>
+                        <li><a href="projects.html" class="nav__link">Проекти</a></li>
+                        <li><a href="#contact" class="nav__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Змінити тему">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <div class="burger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <p class="hero__greeting">Привіт, мене звати Денис</p>
+                <h1 class="hero__title">Я <span class="txt-type" data-wait="2000" data-words='["Frontend Developer", "JavaScript Ентузіаст", "Креатор", "Студент"]'></span></h1>
+                <p class="hero__desc">Створюю сучасні, адаптивні та швидкі веб-сайти.</p>
+                <div class="hero__btns">
+                    <a href="#contact" class="btn btn--primary">Написати мені</a>
+                    <a href="projects.html" class="btn btn--outline">Мої роботи</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about hidden-section">
+            <div class="container">
+                <div class="glass-card">
+                    <div class="about__grid">
+                        <div class="about__img-wrapper">
+                            <img src="./img/me3.jpg" alt="Моє фото" class="about__img">
+                            <div class="about__decoration"></div>
+                        </div>
+                        <div class="about__text">
+                            <div id="about-conent"><h2 class="section__title">Хто я?</h2> <img src="./img/zelen.png" alt=""></div>
+                            <p>Я початківець веб-розробник, який прагне досконалості в кожному пікселі. Захоплююсь кодінгом, автомобілями <br>(особливо <strong>Chevrolet та Dodge</strong>) та постійним саморозвитком.</p>
+                            <p>У вільний час я вдосконалюю свої навички, слухаю музику та проводжу час з друзями. Мій шлях у IT почався на прикінці першого курсу на дисципліні <strong>UX/UI Designer</strong> з простої цікавості "як це працює", а тепер це моя пристрасть.</p>
+                            
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <h3>5+</h3>
+                                    <p>Пет-проектів</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>1 рік</h3>
+                                    <p>Навчання</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills hidden-section">
+            <div class="container">
+                <h2 class="section__title center">Мій Арсенал</h2>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <div class="skill-card__inner">
+                            <div class="skill-card__front">
+                                <span class="icon">💻</span>
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skill-card__back">
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3 / SASS / Flex / Grid</li>
+                                    <li>JavaScript (ES6+)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__inner">
+                            <div class="skill-card__front">
+                                <span class="icon">⚙️</span>
+                                <h3>Tools</h3>
+                            </div>
+                            <div class="skill-card__back">
+                                <ul>
+                                    <li>VS Code</li>
+                                    <li>Git & GitHub</li>
+                                    <li>Figma (Basic)</li>
+                                    <li>Chrome DevTools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__inner">
+                            <div class="skill-card__front">
+                                <span class="icon">🚀</span>
+                                <h3>Soft Skills</h3>
+                            </div>
+                            <div class="skill-card__back">
+                                <ul>
+                                    <li>Командна робота</li>
+                                    <li>Швидке навчання</li>
+                                    <li>Швидке адаптування</li>
+                                    <li>Англійська</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section__title center">Зв'язок</h2>
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Ваше Ім'я</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Ваш Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Повідомлення</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary full-width">Відправити</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Створено з ❤️ та ☕. 2025.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

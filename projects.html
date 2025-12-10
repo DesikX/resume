@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої Проекти | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">&lt;Denis <span class="accent">Dev</span>/&gt;</a>
+            
+            <div class="header__controls">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Головна</a></li>
+                        <li><a href="index.html#about" class="nav__link">Про мене</a></li>
+                        <li><a href="#" class="nav__link active">Проекти</a></li> <li><a href="index.html#contact" class="nav__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Змінити тему">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <div class="burger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section projects-page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="hero__title">Мої <span class="accent">Роботи</span></h1>
+                    <p>Демонстрація функціоналу через відео-прев'ю</p>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <article class="project-card glass-card">
+                        <div class="video-wrapper">
+                            <video 
+                                src="video/project1.mp4" 
+                                poster="img/poster1.png"
+                                autoplay muted loop playsinline>
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <h3>Сайт Кафе</h3>
+                            <p>Адаптивний лендінг з анімацією страв та формою бронювання.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--sm">Live Demo</a>
+                                <a href="#" class="btn btn--outline btn--sm">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="video-wrapper">
+                            <video 
+                                src="video/project2.mp4" 
+                                poster="img/poster2.jpg"
+                                autoplay muted loop playsinline>
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <h3>Сайт вебінар</h3>
+                            <p>Сайт про вебінар тревел фотографій та онлайн-навчання.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--sm">Live Demo</a>
+                                <a href="#" class="btn btn--outline btn--sm">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card">
+                        <div class="video-wrapper">
+                            <video 
+                                src="video/project3.mp4" 
+                                poster="img/poster3.jpg"
+                                autoplay muted loop playsinline>
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <h3>Интернет магазин НФТ</h3>
+                            <p>Интернет магазин для покупки та продажу NFT-артів.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn--sm">Live Demo</a>
+                                <a href="#" class="btn btn--outline btn--sm">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Створено з ❤️ та ☕. 2025.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
